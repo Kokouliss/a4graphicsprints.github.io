@@ -40,7 +40,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<script src="//code.jquery.com/jquer.min.js"></script>
 	<script type="text/javascript" src="jss/modernizr.js"></script>
 	<script type="text/javascript" src="jss/jquery152.js"></script>
-	<script type="text/javascript" src="jss/prefix.js"></script>
+  <script type="text/javascript" src="jss/prefix.js"></script>
+  <script src="swup/dist/swup.js"></script>
 	
 
 
@@ -50,7 +51,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50" class="backgroundcolor">
+<body data-spy="scroll" data-target=".navbar" data-offset="50" class="backgroundcolor" >
 
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WX4CVT3"
@@ -67,10 +68,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="navbar-collapse">
             <ul class="navbar-nav mx-auto" >
                 <li class="nav-item " >
-                  <a class="nav-link hover-underline-animation " href="http://a4graphicsprints.gr">Αρχική </a>
+                  <a class="nav-link hover-underline-animation " href="#">Αρχική </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link hover-underline-animation"  href="http://a4graphicsprints.gr/menu/portfolio">Portfolio</a>
+                    <a class="nav-link hover-underline-animation"  href="menu/portfolio.html">Portfolio</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link hover-underline-animation"  href="#services">Υπηρεσίες</a>
@@ -82,7 +83,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <a class="nav-link hover-underline-animation" href="#contact">Επικοινωνία</a>
                   </li>
                    <li class="nav-item">
-                    <a class="nav-link hover-underline-animation" href="http://a4graphicsprints.gr/menu/aboutus">About&nbsp;us</a>
+                    <a class="nav-link hover-underline-animation" href="menu/aboutus.html">About&nbsp;us</a>
                   </li>
 				</ul>
             <img class="navbar-brand " src="img/a4logoau.png"> </img>	
@@ -180,7 +181,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 
-<div class="main" id="Portfolio">
+<div class="main" id="Portfolio" id="swup" class="">
 				            <div class="heading text-center">
 				<a class="h2" href="http://a4graphicsprints.gr/menu/portfolio">  Portfolio </a>
             </div>
@@ -1070,7 +1071,12 @@ you choose to display on this Website. By displaying Your Content, you grant A4 
 					<script src="jss/gallerymason.js"></script>
 					
 
+<script>
 
+import Swup from 'swup';
+const swup = new Swup(); 
+
+  </script>
 
     <script>
           baguetteBox.run('.cards-gallery', { animation: 'slideIn'});
